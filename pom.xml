@@ -15,4 +15,9 @@
       <scope>test</scope>
     </dependency>
   </dependencies>
+   <build>
+        <defaultGoal>clean install</defaultGoal>
+        <!-- Source directory configuration -->
+        <sourceDirectory>src</sourceDirectory>
+</build>
 </project>
