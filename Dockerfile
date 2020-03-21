@@ -11,8 +11,9 @@ ARG JAR_FILE=target/*.jar
 # COPY ${JAR_FILE} app.jar
 COPY  target/*.jar app.jar
 # RUN apk add --no-cache curl tar bash
-ENTRYPOINT ["java","-jar","/app.jar"]
+
 
 EXPOSE 80
 
 CMD ["/usr/sbin/apache2", "-D", "FOREGROUND"]
+ENTRYPOINT ["java","-jar","/app.jar"]
