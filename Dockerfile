@@ -4,5 +4,5 @@ FROM openjdk:8-jdk-alpine
 RUN apk add --no-cache curl tar bash
 #ENTRYPOINT ["java","-jar","/app.jar"]
 EXPOSE 80
-#CMD exec /bin/bash -c "trap : TERM INT; sleep infinity & wait"
-CMD [""]
+CMD exec /bin/bash -c "trap : TERM INT; sleep infinity & wait"
+#CMD [""]
