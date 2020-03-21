@@ -16,4 +16,4 @@ COPY  target/*.jar app.jar
 EXPOSE 80
 
 CMD ["/usr/sbin/apache2", "-D", "FOREGROUND"]
-ENTRYPOINT ["java","-jar","/app.jar"]
+#ENTRYPOINT ["java","-jar","/app.jar"]
